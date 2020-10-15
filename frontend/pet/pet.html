@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Adotar - Página do Pet</title>
+    <link rel="shortcut icon" href="../pet/img/collar-verde.png">
+    <link rel="stylesheet" href="../pet/css/pagpet.css">
+    <link rel="stylesheet" href="../pet/css/all.css">
+    <link rel="stylesheet" href="../pet/css/footer.min.css">
+    <link rel="stylesheet" href="../pet/css/menu.css">
+    <link rel="stylesheet" href="../pet/fontes/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-bar">
+            <a href="#"><img src="../pet/img/logoboradotarverde.png" alt="Logomarca do site"></a>
+            <label for="check"></span><span class="icon-menu3"></span></label>
+            <input type="checkbox" name="checkbox" id="check">
+            <nav class="header-menu clearfix">
+                <ul>
+                    <li class="home"><a href="/" class="links">Home</a></li>
+                    <li class="adotar"><a href="/catalogo" class="links">Adote</a></li>
+                    <li class="suporte"><a href="/suporte" class="links">Suporte</a></li>
+                    <li class="criar"><a href="/user/chat" class="links">Chat</a></li>
+                    <li class="entrar"><a href="/user/me" class="links">Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="pet-layout container">
+            <article id="pet-container" class="img-pet">
+                <img class="img-focus" alt="Foto Pet">
+                <img class="img-alt img-select img-border" id="img-1" alt="Foto Pet">
+                <img class="img-alt img-select" id="img-2"  alt="Foto Pet">
+                <img class="img-alt img-select" id="img-3"  alt="Foto Pet">
+                <img class="img-alt img-select" id="img-4"  alt="Foto Pet">
+                <img class="img-alt img-select" id="img-5"  alt="Foto Pet">
+            </article>
+            <div class="specs-pet">
+                <h2 id="name"></h2>
+                <ul>
+                    <li><i class="fas fa-check"></i><a id="specie"></a></li>
+                    <li><i class="fas fa-check"></i><a id="sex"></a></li>
+                    <li><i class="fas fa-check"></i><a id="porte"></a></li>
+                </ul>
+                <a id="botao" class="btn">Quero Adotar!</a>
+                <p id="dono-nome"></p>
+                
+                <h3>Compartilhe para o pet ganhar uma casa!</h2>
+                <a href="#" class="social2 mg-left"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social2"><i class="fab fa-twitter"></i></a>
+                
+            </div>
+           
+            
+        </section>
+        <section class="pet-story container">
+            <h2>Características do Pet:</h2>
+            <p id="desc"></p>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="site">
+            <img src="../../index/Imagens/boradotar (1).png" alt="logomarca do site BorAdotar">
+            <p>O BorAdotar é uma fundação sem fundos lucrativos que procura auxiliar os animais a encontrar um lar! Faça uma adoção ou ajude um amigo!</p>
+        </div>
+        <div class="services">
+            <h3 class="services-title">Serviços</h3>
+            <ul class="ul">
+                <li><a href="#" class="links-footer">Home</a></li>
+                <li><a href="#" class="links-footer">Adote</a></li>
+                <li><a href="#" class="links-footer">Suporte</a></li>
+                <li><a href="#" class="links-footer">Entrar</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h3 class="social-title">Siga-nos nas redes sociais</h3>
+            <div class="social-medias">
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+        <div class="credits">
+            <a href="https://www.pexels.com/photo/blur-care-cat-close-up-569170/">Photo by Japheth Mast from Pexels</a>
+            <a href="https://www.pexels.com/photo/animal-animal-photography-animal-portrait-ball-422220/">Photo by Matthias Zomer from Pexels</a>
+            <a href="https://br.freepik.com/fotos-gratis/gatinhos-no-travesseiro_5554759.htm#page=2&query=gato&position=23">Filhotes foto criado por jcomp - br.freepik.com</a>
+        </div>
+    </footer>
+</body>
+<script src="../pet/js/axios_pet.js"></script>
+<script src="../pet/js/pagpetJS.js"></script>
+</html>

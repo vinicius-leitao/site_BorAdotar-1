@@ -1,0 +1,47 @@
+@charset "UTF-8";
+.msgUser{
+    clear: both;
+    display: block;
+    max-width: 50%;
+    float: right;
+    font-size: 14px;
+    background-color: #8C2E73;
+    color: white;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+}
+.msgOther{
+    clear: both;
+    display: block;
+    max-width: 50%;
+    float: left;
+    font-size: 14px;
+    background-color: #03A696;
+    color: white;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+}
+.userName{
+    color: #D95DB8;
+}
+.user-hour{
+    float: right;
+    color: #D95DB8;
+}
+.other-hour{
+    color:#1DF2DD
+}
+.otherName{
+    color:#1DF2DD;
+}
+@media screen and (min-width: 50em){
+    .msgUser{
+        font-size: 14px;
+        margin: 2em;
+    }
+    .msgOther{
+        margin: 2em;
+    }
+}

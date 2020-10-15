@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,input,textarea,select,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =============================================================================
+================================================================================ */
+
+
+body{
+    font-size: 10px;
+    background-color: #f1f1f1;
+}
+
+.cadastro{
+
+    width: 60%;
+    margin: 0 20% 50px;
+}
+.cadastro h2{
+    font-size: 4.0em;
+    padding: 40px 0 30px;
+    text-align: center;
+    color: #8C2E73;
+    font-weight: bold;
+}
+
+.form-cadastro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.form-cadastro input, .form-cadastro select {
+    width: 100%;
+    height: 45px;
+    border: solid 0.7px #d3d0d0;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+.form-cadastro label{
+    font-size: 1.8em;
+    line-height: 35px;
+}
+
+.email{ 
+    grid-column: span 2;
+}
+
+.form-cadastro button {
+    grid-column: span 2;
+    background-color: #8C2E73;
+    height: 50px;
+    width: 300px;
+    font-size: 2.0em;
+    color: #fff;
+    justify-self: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+.form-cadastro button:hover{
+
+    background-color: rgb(105, 34, 86);
+}
+
+@media screen and (max-width: 480px){
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+    .cadastro{
+        width: 80%;
+        margin: 0 10% 50px;
+    }
+
+    .form-cadastro{
+        grid-template-columns: 1fr ;
+
+    }
+
+    .email{
+        grid-column: auto;
+    }
+    .form-cadastro button{
+        grid-column: auto;
+    }
+
+}

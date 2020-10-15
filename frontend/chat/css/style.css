@@ -1,0 +1,226 @@
+@charset "UTF-8";
+@media screen and (min-width: 1em){
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    height: 100%;
+    
+}
+h1{
+    color: #03a696;
+}
+h2{
+    font-size: 1em;
+    color: #03a696;
+    display: flex;
+    text-align: center;
+}
+.link-chat{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #555;
+}
+.desceMain {
+    transition: all 1s ease;
+    display: block;
+    margin-bottom: 21em;
+}
+.escondeNav{
+    position: relative;
+    transition: all .5s ease;
+    transform: translateX(-150%);
+    z-index: 4 !important;
+    opacity: 0;
+    overflow-x: hidden;
+}
+.mostraNav{
+    transition: all .3s ease;
+    transform: translateX(0);
+    opacity: 1;
+}
+.mostraChat{
+    transition: all .5s ease;
+    display: inline-block !important;
+}
+.main-container{
+    width: 90%;
+    margin: 2em auto;
+}
+.chat-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.chat-container{
+    border: 2px solid #777;
+    border-radius: 0.5em;
+    height: 600px;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    grid-template-rows:[voltar-start] 5% [voltar-end chatArea-start] 90% [chatArea-end input-start] 5% [input-end];
+    z-index: 10;
+    position: relative;
+    
+}
+.chat-nav{
+    position: relative;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    overflow-y: scroll;
+}
+.users img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 1em 0.5em 0 0.5em;
+}
+.users{
+    cursor: pointer;
+    border-bottom: 2px solid #777;
+    padding: 1em;
+    font-size: 1.2em;
+}
+.users:last-child{
+    border-bottom: none;
+}
+.users p{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    color: #555;
+    overflow-x: hidden;
+}
+.user-active{
+    background-color: #03A696;
+    color: #fff !important;
+    font-weight: bold;
+}
+.ul-nav{
+    display: block;
+}
+.chat-area, .input, .inputS, .voltar{
+    display: none;
+}
+.chat-area{
+    grid-row: chatArea;
+    grid-column: 1/-1 !important;
+    overflow-y: scroll;
+}
+.input{
+    resize: none;
+    flex-grow: 2;
+    padding: 0.5em;
+}
+.inputS{
+    background-color: #8C2E73;
+    border: none;
+    color: white;
+}
+#chat-area{
+    grid-row: input;
+    grid-column: 1/2;
+    display: flex;
+    
+}
+.voltar{
+    grid-row: voltar;
+    grid-column: 1/2;
+    width: 30%;
+    background-color: transparent;
+    text-align: left;
+    color: #777;
+    border: none;
+    cursor: pointer;
+}
+.voltar::before{
+    font-family: "icomoon";
+    content: "\ea40";
+    margin-right: 0.4em;
+}
+}
+@media screen and (min-width:50em){
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chat-container{
+    margin: 2em auto;
+    grid-template-columns: [nav-start] minmax(200px, 200px) [nav-end chat-start] minmax(20%, auto) [chat-end];
+    grid-template-rows: [chatArea-start] 95% [chatArea-end input-start] 5% [input-end];
+}
+.chat-nav{
+    grid-column: nav;
+    grid-row: 1/-1;
+    border-right: 2px solid #777;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+.users{
+    padding: 1em;
+    justify-self: center;
+    border-right: 2px solid #777;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+}
+.users:hover{
+    transition: all .2s ease;
+    background-color: #ccc;
+}
+.users img{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.7em;
+}
+
+.users p{
+    font-size: 12px;
+    color: #555;
+}
+.chat-area{
+    grid-column: 2/-1 !important;
+    grid-row: chatArea;
+}
+.input{
+    max-width: 100%;
+    overflow-y: scroll;
+    resize: none;
+    padding: 0.5em;
+}
+.inputS{
+    border: none;
+    background-color: #8C2E73;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+#chat-area{
+    grid-column: chat;
+    grid-row: input;
+}
+.chat-area, .input, .inputS{
+    display: inline-block;
+}
+.voltar{
+    display: none;
+}
+}

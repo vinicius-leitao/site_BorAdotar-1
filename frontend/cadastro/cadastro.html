@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora Adotar - Cadastro</title>
+    <link rel="shortcut icon" href="../../cadastro/img/collar-verde.png">
+    <link rel="stylesheet" href="../cadastro/css/cadastro.css">
+    <link rel="stylesheet" href="../cadastro/css/all.css">
+    <link rel="stylesheet" href="../cadastro/css/footer.min.css">
+    <link rel="stylesheet" href="../cadastro/fontes/style.css">
+    <link rel="stylesheet" href="../cadastro/css/menu.css">
+
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-bar">
+            <a href="#"><img src="../cadastro/img/logoboradotarverde.png" alt="Logomarca do site"></a>
+            <label for="check"></span><span class="icon-menu3"></span></label>
+            <input type="checkbox" name="checkbox" id="check">
+            <nav class="header-menu clearfix">
+                <ul>
+                    <li class="home"><a href="/" class="links">Home</a></li>
+                    <li class="adotar"><a href="/catalogo" class="links">Adote</a></li>
+                    <li class="suporte"><a href="/suporte" class="links">Suporte</a></li>
+                    <li class="criar"><a href="/cadastro" class="links">Cadastrar</a></li>
+                    <li class="entrar"><a href="/login" class="links">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section class="cadastro container">
+
+            <h2>Realize seu Cadastro</h2>
+
+            <form class="form-cadastro" method="POST" action="/cadastro">
+                <label for="name">Nome:<input type="text" name="name"></label>
+                <label for="lastname">Sobrenome:<input type="text" name="lastname"></label>
+                <label for="email" class="email">E-Mail:<input type="email" name="email"></label>
+                <label for="password">Senha:<input type="password" name="password"></label>
+                <label for="passwordconfirm">Confirme sua Senha:<input type="password" name="passwordconfirm"></label>
+                <label for="data">Data de Nascimento:<input type="date" name="date"></label>
+                <label for="CEP">CEP:<input type="text" name="cep"></label>
+                <button name="btn">Cadastrar-se</button>
+                
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="site">
+            <img src="../../index/Imagens/boradotar (1).png" alt="logomarca do site BorAdotar">
+            <p>O BorAdotar é uma fundação sem fundos lucrativos que procura auxiliar os animais a encontrar um lar! Faça uma adoção ou ajude um amigo!</p>
+        </div>
+        <div class="services">
+            <h3 class="services-title">Serviços</h3>
+            <ul class="ul">
+                <li><a href="#" class="links-footer">Home</a></li>
+                <li><a href="#" class="links-footer">Adote</a></li>
+                <li><a href="#" class="links-footer">Suporte</a></li>
+                <li><a href="#" class="links-footer">Entrar</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h3 class="social-title">Siga-nos nas redes sociais</h3>
+            <div class="social-medias">
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+        <div class="credits">
+            <a href="https://www.pexels.com/photo/blur-care-cat-close-up-569170/">Photo by Japheth Mast from Pexels</a>
+            <a href="https://www.pexels.com/photo/animal-animal-photography-animal-portrait-ball-422220/">Photo by Matthias Zomer from Pexels</a>
+            <a href="https://br.freepik.com/fotos-gratis/gatinhos-no-travesseiro_5554759.htm#page=2&query=gato&position=23">Filhotes foto criado por jcomp - br.freepik.com</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta name= "author" content="Vinícius Leitão Santos">
+        <meta name= "description" content="Cadastro do pet">
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../../cadastro-pet/imgs/collar-verde.png">
+        <link rel="stylesheet" href="../../cadastro-pet/css/normalize.css">
+        <link rel="stylesheet" href="../../cadastro-pet/css/menu.css">
+        <link rel="stylesheet" href="../../cadastro-pet/css/footer.min.css">
+        <link rel="stylesheet" href="../../cadastro-pet/Fontes/style.css">
+        <link rel="stylesheet" href="../../cadastro-pet/css/estilo.css">
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="header-bar">
+                <a href="/"><img src="../../cadastro-pet/imgs/logoboradotarverde.png" alt="Logomarca do site BorAdotar"></a>
+                <label for="check"></span><span class="icon-menu3"></span></label>
+                <input type="checkbox" name="checkbox" id="check">
+                <nav class="header-menu clearfix">
+                    <ul>
+                        <li class="home"><a href="/" class="links">Home</a></li>
+                        <li class="adotar"><a href="/catalogo" class="links">Adote</a></li>
+                        <li class="suporte"><a href="/suporte" class="links">Suporte</a></li>
+                        <li class="criar"><a href="/user/chat" class="links" id="login">Chat</a></li>
+                        <li class="entrar"><a href="/user/me" class="links">Perfil</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="bg">
+            </section>
+        </header>
+        <main class="main-container">
+            <h1 class="main-title" tabindex="0">Cadastre um animalzinho</h1>
+            <p class="p-before"><span class="span-tab" tabindex="0">Patinha de cachorro, campos antecedidos por esse ícone são obrigatórios.</span>Campos com este ícone são obrigatórios.</p>
+            <form class="form" enctype="multipart/form-data" action="/pet" method="POST">
+                <label  class="icon-before nomeL" for="nome"><span class="span-tab"tabindex="0">Nome do bichinho:</span>Nome:</label>
+                <input class="nome" type="text" name="nome">
+                <label class="icon-before especieL" for="especie"><span class="span-tab" tabindex="0">Patinha de cachorro, Especie:</span>Espécie:</label>
+                <select class="especie" name="especie">
+                    <option value="default" selected>Selecione</option>
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                </select>
+                <label class="icon-before porteL" for="porte"><span class="span-tab" tabindex="0">Patinha de cachorro, Porte do animal:</span>Porte:</label>
+                <div class="checks porte" name="porte">
+                    <label class="iconeTam peq" id="pequeno"><input class="rdo" type="radio" value="pequeno" name="porte"><span class="span-tab" tabindex="0">Marcar animal com tamanho pequeno</span>P</label>
+                    <label class="iconeTam med" id="medio" ><input class="rdo" type="radio" value="medio" name="porte"><span class="span-tab" tabindex="0">Marcar animal com tamanho médio</span>M</label>
+                    <label class="iconeTam gra" id="grande"><input class="rdo" type="radio" value="grande" name="porte"><span class="span-tab" tabindex="0">Marcar animal com tamanho grande</span>G</label>
+                </div>
+                <label class="icon-before idadeL" for="idade"><span class="span-tab" tabindex="0">Patinha de cachorro, Idade do animal:</span>Idade</label>
+                <select class="idadePet idade" name="idade">
+                </select>
+                <label for="sexo" class="icon-before sexoL">Sexo:</label>
+                <select class="sexoPet" name="sexo">
+                    <option value="default">Selecione</option>
+                    <option value="idk">Não sei informar</option>
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                </select>
+                <label for=localização class="localizacaoL icon-before"><span class="span-tab" tabindex="0">Patinha de cachorro, Localização do animal:</span>Localização</label>
+                <label for="local" class="localL"><input type="checkbox" id="local" name="local" checked><div class="chk"></div>Usar a sua localização atual.</label>
+                <div class="cepDiv">
+                <label for="cep" class="cepL icon-before">CEP</label>
+                <input type="tel" name="cep" class="inputCep" minlength="9" maxlength="9">
+                </div>
+                <label class="icon-before imgL"><span class="span-tab" tabindex="0">Patinha de cachorro, selecione fotos do bichinho:</span>Foto do bichinho</label>
+                <div class="preview-container">
+                    <label class="preview-input" for="img">
+                        <input name="img" id="img" type="file" class="inputImg img" accept=".jpg,.jpeg,.png" multiple>
+                        <span class="icon-camera"></span>
+                        <span class="preview-span">Foto aqui</span>
+                        <span class="preview-span">Apenas JPG e PNG.</span>
+                    </label>
+                </div>
+                <label class="historiaL" for="historiaPet"><span class="span-tab" tabindex="0">Conte um pouco sobre esse bichinho:</span>Conte um pouco sobre esse bichinho</label>
+                <textarea class="textarea" name="historiaPet" placeholder="Fique a vontade para contar a história dele(a)"></textarea>
+                <input class="submit" type="submit">
+            </form>
+            
+        </main>
+        <footer class="footer">
+            <div class="site">
+                <img src="../../index/Imagens/boradotar (1).png" alt="logomarca do site BorAdotar">
+                <p>O BorAdotar é uma fundação sem fundos lucrativos que procura auxiliar os animais a encontrar um lar! Faça uma adoção ou ajude um amigo!</p>
+            </div>
+            <div class="services">
+                <h3 class="services-title">Serviços</h3>
+                <ul class="ul">
+                    <li><a href="#" class="links-footer">Home</a></li>
+                    <li><a href="#" class="links-footer">Adote</a></li>
+                    <li><a href="#" class="links-footer">Suporte</a></li>
+                    <li><a href="#" class="links-footer">Entrar</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3 class="social-title">Siga-nos nas redes sociais</h3>
+                <div class="social-medias">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                    <a href="#"><span class="icon-instagram"></span></a>
+                </div>
+            </div>
+            <div class="credits">
+                <a href="https://www.pexels.com/photo/blur-care-cat-close-up-569170/">Photo by Japheth Mast from Pexels</a>
+                <a href="https://www.pexels.com/photo/animal-animal-photography-animal-portrait-ball-422220/">Photo by Matthias Zomer from Pexels</a>
+                <a href="https://br.freepik.com/fotos-gratis/gatinhos-no-travesseiro_5554759.htm#page=2&query=gato&position=23">Filhotes foto criado por jcomp - br.freepik.com</a>
+            </div>
+        </footer>
+        <script src="../../cadastro-pet/js/IdadeDaEspecie.js"></script>
+        <script src="../../cadastro-pet/js/descerConteudoMain.js"></script>
+        <script src="../../cadastro-pet/js/mostrarPreviewFoto.js"></script>
+        <script src="../../cadastro-pet/js/mudarCorTamSelecionado.js"></script>
+        <script src="../../cadastro-pet/js/mostrarInputCep.js"></script>
+        <script src="../../cadastro-pet/js/mascaraCep.js"></script>
+    </body>
+</html>
+                    
+                    
+                    

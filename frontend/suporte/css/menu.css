@@ -1,0 +1,159 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-container{
+    background-color: #8c2e73;
+}
+.header-bar {
+    width: 100%;
+    height: 4em;
+    display: block;
+}
+
+.header-bar img {
+    float: right;
+    display: block;
+    margin-right: .5em;
+    line-height: 4em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icon-menu3 {
+    margin: 0.5em 0 0 0.5em;
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+}
+
+.icon-menu3:active {
+    color: #ccc;
+    transition: color .1s linear;
+}
+
+#check {
+    float: left;
+    display: block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.header-menu {
+    
+    max-width: 100%;
+    position: absolute;
+    left: -30em;
+    top: 4em;
+}
+
+.header-container #check:checked+.header-menu {
+    width: 100%;
+    transform: translateX(30em);
+    transition: all .7s ease;
+}
+
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #7F66D9;
+    height: 20em;
+}
+
+.header-menu ul li {
+    text-align: center;
+    padding: 1.373em;
+    border-bottom: solid 2px white;
+    box-sizing: border-box;
+}
+
+.links {
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links:active {
+    color: #ccc;
+    transition: color .3s ease;
+}
+@media screen and (min-width: 50em){
+    .header-bar{
+        width: 98%;
+        height: 5.3125em;
+        margin: 0 auto;
+    }
+    .header-bar img{
+        float: left;
+        cursor: pointer;
+    }
+    .icon-menu3{
+        display: none;
+
+    }
+    #check{
+        display: none;
+    }
+    .header-menu{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 10px;
+    }
+    .header-menu ul{
+        height: 85px;
+        background-color: transparent;
+        display: grid;
+        grid-template-rows: [ul-start] 100% [ul-end];
+        grid-template-columns: 0.5em [home-start]0.5fr [home-end adotar-start]0.5fr [adotar-end suporte-start]0.5fr [suporte-end vazio-start] 1fr [vazio-end criar-start] .5fr [criar-end entrar-start] .5fr [entrar-end];
+    }
+    .header-menu ul li{
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    .links{
+        font-weight: normal;
+        font-size: 1.5em;
+        color: #fff;
+        line-height: 5.3125em;
+        padding: 2.3em;
+       
+    }
+    .links:hover{
+        background-color: rgb(88, 29, 73);
+        border-bottom:  solid 3px #fff;
+    }
+    .home{
+        grid-row: ul;
+        grid-column: home;
+    }
+    .adotar{
+        grid-row: ul;
+        grid-column: adotar;
+    }
+    .suporte{
+        grid-row: ul;
+        grid-column: suporte;
+    }
+    .entrar{
+        grid-row: ul;
+        grid-column: entrar;
+    }
+    .criar{
+        grid-row: ul;
+        grid-column: criar;
+    }
+}
+@media screen and (min-width: 75em){
+    .header-bar{
+        width: 60%;
+    }
+}

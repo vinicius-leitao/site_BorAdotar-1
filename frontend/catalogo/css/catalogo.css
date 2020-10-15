@@ -1,0 +1,477 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,input,textarea,select,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =============================================================================
+================================================================================ */
+
+
+body{
+    font-size: 10px;
+    background-color: #f1f1f1;
+}
+.icon-mars, .icon-venus{
+    position: absolute;
+    left: 40%;
+    bottom: 3%;
+    font-size: 20px;
+}
+.icon-mars{
+    color: #8C2E73;
+}
+.icon-venus{
+    color: #F27272;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto 3em auto;
+}
+
+.banner-img{
+    height: 550px;
+    background-image: url(../img/bgpet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+.search{
+    background-color: #03A696;
+    height: 380px;
+    border-radius: 5px;
+    padding: 0 30px;
+    margin-top: 30px;
+}
+.search h2{
+    text-align: center;
+    font-size: 3.0em;
+    font-weight: bold;
+    color: #fff;
+    padding: 20px 0 20px; 
+}
+
+
+.form-pet form{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+    
+}
+
+#cidades{
+    grid-column: span 2;
+}
+.form-pet select{
+    padding: 15px 8px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    outline: none;
+    color: #757575;
+}
+
+.form-pet input {
+    grid-column: span 2;
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.form-pet button{
+    width: 25%;
+    padding: 15px;
+    font-size: 1.5em;
+    justify-self: center;
+    grid-column: span 2;
+    border-radius: 2px;
+    background-color: #8C2E73;
+    color: #ffff;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+}
+
+.clear{
+    clear: both;
+}
+
+.form-pet button:hover{
+    background-color: rgb(88, 29, 73);
+}
+
+.catalogo {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.catalogo h2{
+    font-size: 3.4em;
+    text-align: center;
+    font-weight: bold;
+    color: #8C2E73;
+    margin: 40px 0;
+}
+
+.box-pet{
+    cursor: pointer;
+    float: left;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 21.2%;
+    margin: 20px 1%;
+    padding: 1em;
+    background-color: #fff;
+    position: relative;
+    transform: scale(600px);
+}
+
+.box-pet img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.box-pet h3{
+    display: inline-block;
+    float: left;
+    font-size: 2.8em;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #8C2E73;
+    text-decoration: none;
+    font-weight: bold;
+}
+.box-pet div{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.regiao-a{
+    clear: both;
+    float: left;
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.box-pet p{
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 1.4em;
+    border: solid 1px black;
+    color: black ;
+    border-radius: 5px;
+    padding: 2.5px;
+    
+}
+
+.active-border{
+
+    border: solid 1px rgb(6, 128, 115) !important;
+    color: rgb(6, 128, 115)  !important;
+
+}
+
+.catalogo ul{
+
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.catalogo li{
+    display: inline-block;
+    margin-top: 40px;
+    
+}
+
+.border-li-left{
+    border-radius: 5px 0 0 5px;
+}
+
+.border-li-right{
+    border-radius: 0px 5px 5px 0px;
+}
+.catalogo li a{
+    
+    font-size: 1.8em;
+    border: solid 1px #d6d4d4;
+    background-color: #ffff;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+.catalogo li a:hover{
+    background-color: #EEEEEE;
+}
+
+.display-none{
+
+    display: none !important;
+}
+
+.login{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0,0.2);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-login{
+    position: relative;
+    background-color: #fff; 
+    height: 400px;
+    width: 450px;
+    transform: scaleX(0px);
+    padding: 40px;
+    border-radius: 10px;
+    animation: box-login 0.5s;
+    
+}
+
+@keyframes box-login{
+
+    from{
+
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+}
+
+
+@keyframes box-close{
+
+    from{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    to{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+}
+
+.box-login i{
+    position: absolute;
+    font-size: 2.3em;
+    color: #757575;
+    top: 5px;
+    right: 10px;
+    
+}
+
+
+.box-login h2{
+
+    font-size: 3.4em;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.box-login p{
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 20px;
+}
+.box-login a{
+    color: black;
+}
+.form {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    
+    font-size: 1.8em;
+}
+
+#login, #close{
+    cursor: pointer;
+}
+.esqueceusenha{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+}
+
+.form input {
+    border: solid 0.7px #d3d0d0;
+    outline: none;
+    padding: 17px 10px;
+    border-radius: 5px;
+    grid-column: span 2;
+    
+}
+
+
+.form button{
+
+    background-color: #8C2E73;
+    padding: 15px 60px;
+    border-radius: 3px;
+    grid-column: 2 span;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.form button:hover{
+    background-color: rgb(88, 29, 73);
+}
+
+
+
+.cadastro{
+    height: 100vh;
+    width: 800px;
+    margin-bottom: 50px;
+}
+.cadastro h2{
+    font-size: 4.0em;
+    padding: 150px 0 30px;
+    text-align: center;
+    color: #8C2E73;
+    font-weight: bold;
+}
+
+.form-cadastro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.form-cadastro input, .form-cadastro select {
+    width: 100%;
+    height: 45px;
+    border: solid 0.7px #d3d0d0;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+
+.form-cadastro label{
+    font-size: 1.8em;
+    line-height: 35px;
+}
+
+.email{ 
+    grid-column: span 2;
+}
+
+.form-cadastro button {
+    grid-column: span 2;
+    background-color: #8C2E73;
+    height: 50px;
+    width: 300px;
+    font-size: 2.0em;
+    color: #fff;
+    justify-self: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.5s;
+}
+
+.form-cadastro button:hover{
+
+    background-color: rgb(105, 34, 86);
+}
+
+
+@media screen and (max-width: 480px){
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+    
+    .search{
+        width: 80%;
+        padding: 0 5%;
+    }
+    .form-pet form{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .form-pet button{
+        width: 80%;
+    }
+
+    .catalogo{
+        width: 100%;
+    }
+    .box-pet{
+        width: 60%;
+        margin: 20px 17%;
+        padding: 3%;
+    }
+    .box-pet img{
+        width: 100%;
+
+    }
+}

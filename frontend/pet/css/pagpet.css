@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,input,textarea,select,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: 'Open Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =============================================================================
+================================================================================ */
+html{
+    height: 100%;
+}
+
+body{
+    font-size: 10px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.pet-layout{
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-pet img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img-pet{
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 50%;
+    gap: 20px;
+}
+
+.img-border{
+    border: 4px solid #1dd0e7;
+    box-sizing: border-box;
+}
+.img-focus{
+   grid-row: 1; 
+   grid-column: 4 span;
+}
+
+.img-alt{
+    width: 100%;
+}
+
+.specs-pet h2{
+    font-size: 4.0em;
+    font-weight: bold;
+    margin-left: 80px;
+}
+
+.specs-pet li{
+    margin-left: 80px;
+    margin-top: 20px;
+    line-height: 14px;
+    font-size: 2.0em;
+}
+
+.btn{
+    display: block ;
+    margin-left: 80px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px 30px;
+    background-color: #8C2E73;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2.0em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.btn:hover{
+
+    background-color: #4d193f;
+}
+
+.specs-pet p{
+    margin-left: 80px;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.pet-story{
+    padding:0 0 80px;
+}
+.pet-story h2{
+    margin: 20px 0 20px;
+    font-size: 2.7em;
+    font-weight: bold;
+}
+.pet-story p{
+    font-size: 1.7em;
+    color: #757575;
+    line-height: 25px;
+}
+
+.share-social{
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+
+.mg-left{
+    margin-left: 80px;
+}
+
+.social2{
+    display: inline-block;
+    font-size: 3.5em;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.specs-pet h3{
+    font-weight: 600;
+    font-size: 2.2em;
+    margin-left: 80px;
+    margin-top: 20px;
+    
+}
+
+@media screen and (max-width: 480px){
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+
+    .pet-layout{
+        width: 100%;
+        padding-top: 40px;
+    }
+    .img-pet{
+        width: 90%;
+        margin: 0 10% 30px;
+    }
+
+    .specs-pet h2{
+        margin-left: 0;
+    }
+    .specs-pet li{
+        margin-left: 0;
+    }
+    .btn{
+        margin-left: 0;
+    }
+    .specs-pet p{
+        margin-left: 0;
+    }
+    .specs-pet h3{
+        margin-left: 0;
+    }
+    .mg-left{
+        margin-left: 0;
+    }
+
+    .specs-pet{
+        width: 90%;
+        margin: 0 5% 20px;
+        text-align: center;
+    }
+
+    .pet-story{
+        width: 90%;
+        margin: 0 5%;
+    }
+}

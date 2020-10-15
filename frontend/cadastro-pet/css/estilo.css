@@ -1,0 +1,448 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  background-color: #f1f1f1;
+}
+.icon-camera{
+  font-size: 2em;
+  color: #03a696;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.mostraCep{
+  transition: all 1s ease;
+  display: inline-block !important;
+  grid-row: inputCep;
+  grid-column: 1;
+  text-align: center;
+}
+.desceMain {
+  transition: all 1s ease;
+  display: block;
+  margin-bottom: 20em;
+}
+.mudaCor{
+  transition: all 1s ease;
+  color: #03a696 !important;
+  border: solid 2px #03a696 !important;
+}
+.bg {
+  background-image: url(../imgs/blur-care-cat-close-up-569170.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 20em;
+}
+.main-container {
+  transition: all 1s ease;
+  width: 90%;
+  margin: 1em auto;
+}
+.main-title {
+  font-weight: bold;
+  text-align: center;
+  color: #03a696;
+}
+.form {
+  display: grid;
+  grid-template-rows: [nomeL-start] 0.5fr [nomeL-end nome-start] 1fr [nome-end especieL-start] 0.5fr [especieL-end especie-start] 1fr [especie-end porteL-start] 0.5fr [porteL-end porte-start] 1fr [porte-end idadeL-start] 0.5fr [idadeL-end idade-start] 1fr [idade-end sexoL-start] 0.5fr [sexoL-end sexo-start] 1fr [sexo-end localizacaoL-start] 0.5fr [localizacaoL-end localL-start] 1fr [localL-end inputCep-start] 1fr[inputCep-end imgL-start] 0.5fr [imgL-end previewContainer-start] 3fr [previewContainer-end historiaL-start] 0.5fr [historiaL-end textarea-start] 3.5fr [textarea-end submit-start] 0.5fr [submit-end];
+  grid-template-columns: 100%;
+  justify-content: center;
+  grid-row-gap: 0.5em;
+}
+.span-tab{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.form input,
+.form select,
+.form textarea {
+  border: none;
+  padding: 0.5em;
+  color: #555;
+}
+.form label {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #8c2e73;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.icon-before{
+  font-family: Arial, Helvetica, sans-serif !important;
+  padding: 0;
+  margin: 0;
+  color: #8c2e73;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.icon-before::before {
+  font-family: "icomoon";
+  content: "\e900";
+  font-size: 1em;
+  color: #8c2e73;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0.5em;
+}
+.rdo{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+
+}
+.peq,
+.med,
+.gra {
+  transition: all 1s ease;
+  font-size: 1.5em;
+  display: inline-block;
+  border: solid 2px #8c2e73;
+  border-radius: 0.625em;
+  line-height: 2em;
+  width: 2em;
+  height: 2em;
+  padding: 1em;
+}
+.checks {
+  margin: auto;
+  text-align: center;
+}
+.checks label::before {
+  display: none;
+}
+.nomeL {
+  grid-row: nomeL;
+}
+.nomeL::before {
+  visibility: hidden;
+}
+.nome {
+  grid-row: nome;
+  grid-column: 1;
+}
+.especieL {
+  grid-row: especieL;
+  grid-column: 1;
+}
+.especie {
+  grid-row: especie;
+  grid-column: 1;
+}
+.porteL {
+  grid-row: porteL;
+  grid-column: 1;
+}
+.porte {
+  grid-row: porte;
+  grid-column: 1;
+}
+.idadeL {
+  grid-row: idadeL;
+  grid-column: 1;
+}
+.idade {
+  grid-row: idade;
+  grid-column: 1;
+}
+.sexoL{
+  grid-row: sexoL;
+}
+.sexoPet{
+  grid-row: sexo;
+}
+.localizacaoL{
+  grid-row: localizacaoL;
+  grid-column: 1;
+}
+.localL{
+  grid-row: localL;
+  grid-column: 1;
+  text-align: center;
+  color: #03a696 !important;
+  align-self: center;
+}
+.chk{
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 0.5em;
+}
+.chk::before{
+  transition: all .5s ease;
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #777;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 3px;
+}
+#local:checked + .chk{
+  background-color: #03a6969a;
+}
+#local:checked + .chk::before{
+  transition: all .5s ease;
+  transform: translateX(18px);
+  background-color: #03a696;
+}
+#local{
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.cepDiv{
+  justify-self: center;
+}
+.inputCep{
+    display: none;
+    transition: all 1s ease;
+}
+.cepL{
+  display: none;
+}
+.imgL {
+  grid-row: imgL;
+  grid-column: 1;
+}
+.preview-container{
+  grid-row: previewContainer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.preview-input{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: dashed 2px #03a696;
+}
+.preview-input:active, .preview-input:hover{
+  transition: all .5s ease;
+  background-color: #03a69634;
+}
+.preview-input input{
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.preview-span{
+  display: inline-block;
+  width: 100%;
+  color:#03a696;
+  text-align: center;
+  font-size: 14px;
+  margin: 1em 0;
+}
+.uploadedImg {
+  grid-row: uploadedImg;
+  border: none;
+  width: 150px;
+  height: 150px;
+  grid-column: 1/-1;
+  justify-self: center;
+}
+.historiaL {
+  grid-row: historiaL;
+  text-align: center;
+  grid-column: 1;
+}
+.historiaL::before {
+  display: none !important;
+}
+.textarea {
+  grid-row: textarea;
+  grid-column: 1;
+  resize: none;
+}
+.submit {
+  grid-row: submit;
+  background-color: #03a696;
+  width: 35%;
+  margin: 0 auto;
+  border-radius: 0.625em;
+  color: white !important;
+  font-weight: bold;
+  grid-column: 1;
+}
+.p-before {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+}
+.p-before::before {
+  font-family: "icomoon";
+  content: "\e900";
+  font-size: 1.2em;
+  color: #8c2e73;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin: 0.5em;
+}
+.p-before span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 50em) {
+  .bg {
+    background-image: url(../imgs/animal-animal-photography-animal-portrait-ball-422220.jpg);
+    background-position: center;
+    background-clip: cover;
+  }
+  .main-container{
+    width: 80%;
+  }
+  .form {
+    grid-template-rows: [label1-start] 1fr [label1-end input1-start] 1fr [input1-end label2-start] 1fr [label2-end input2-start] 1fr [input2-end porteL-start] 0.5fr [porteL-end porte-start] 1fr[porte-end label3-start] 1fr [label3-end input3-start] 1fr [input3-end label4-start] 1fr [label4-end input4-start] 4fr [input4-end label5-start] 1fr [label5-end textarea-start] 3.5fr [textarea-end submit-start] 1fr [submit-end];
+    grid-template-columns: [coluna1-start] 50% [coluna1-end coluna2-start] 50% [coluna2-end];
+    grid-gap: 1em;
+  }
+  .nomeL {
+    grid-row: label1;
+    grid-column: coluna1;
+  }
+  .nome {
+    grid-row: input1;
+    grid-column: coluna1;
+  }
+  .especieL {
+    grid-row: label1;
+    grid-column: coluna2;
+  }
+  .especie {
+    grid-row: input1;
+    grid-column: coluna2;
+  }
+  .sexoL{
+    grid-row: label2;
+    grid-column: coluna1;
+  }
+  .sexoPet{
+    grid-row: input2;
+    grid-column: coluna1;
+  }
+  .porteL {
+    grid-row: porteL;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .porte {
+   grid-row: porte;
+   grid-column: 1/-1;
+   justify-self: center;
+  }
+  .idadeL {
+    grid-row: label2;
+    grid-column: coluna2;
+  }
+  .idade {
+    grid-row: input2;
+    grid-column: coluna2;
+  }
+  .localizacaoL{
+    grid-row: label3;
+  }
+  .localL{
+    grid-row: input3;
+    grid-column: 1/2;
+  }
+  .cepDiv{
+    grid-row: input3;
+    grid-column: coluna2;
+    justify-self: center;
+  }
+  .inputCep{
+    margin-left: 0.5em;
+  }
+  .preview-container{
+    grid-row: input4;
+    grid-column: 1/-1;
+  }
+  .imgL {
+    grid-row: label4;
+    grid-column: coluna1;
+  }
+  .preview-container{
+    display: flex;
+    justify-content: space around;
+  }
+  .preview-input{
+    grid-row: input4;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:200px;
+    height: 200px;
+    border: 2px dashed  #03a696;
+  }
+  .preview-input input{
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .preview-span{
+    display: inline-block;
+    color: #03a696;
+    font-size: 16px;
+    width: 100%;
+    height: initial;
+  }
+  .uploadedImg {
+    grid-row: input4;
+    background-color: #ccc;
+    height: auto;
+    width:  200px;
+    position: relative;
+    grid-column: 1/-1;
+    justify-self: center;
+    margin: 0 0.5em;
+  }
+  .historiaL {
+    grid-row: label5;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .historiaL::before {
+    display: none !important;
+  }
+  .textarea {
+    grid-row: textarea;
+    grid-column: 1/-1;
+  }
+  .submit {
+    grid-row: submit;
+    grid-column: 2/3;
+    background-color: #03a696;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 0.625em;
+    color: white !important;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 75em) {
+  .bg {
+    background-image: url(../imgs/18086.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30em;
+  }
+}

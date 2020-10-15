@@ -1,0 +1,153 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.desceMain{
+    transition: all 1s ease;
+    display: block;
+    margin-bottom: 20em;
+}
+.bg{
+    background-image: url(../imgs/cat-sleeping-62640.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20em;
+}
+/* espaço reservado para inclusão do menu do borAdotar */
+
+.main-container{
+    width: 90%;
+    margin: 2em auto 6em auto;
+    height: 100%;
+}
+.main-container h2{
+    font-weight: bold;
+    text-align: center;
+    color: #8C2E73;
+   
+}
+
+
+.topicos{
+    list-style-type: none;
+}
+.topicos li{
+    font-weight: bold;
+    color: #7F66D9;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.topicos li::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f105";
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color:#8C2E73;
+    cursor: pointer;
+}
+.content{
+    margin-top: 1em;
+    color: #666;
+    display: block;
+}
+.content p{
+    transition: all;
+    display: none;
+}
+
+.formSection h2{
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+.formContainer form{
+    display: grid;
+    grid-row-gap: 1em;
+    grid-column-gap: 2%;
+    grid-template-rows: [label-start] 10% [label-end input-start] 20% [input-end label2-start] 10% [label2-end textarea-start] 40% [textarea-end input2-start] 20% [input2-end];
+    grid-template-columns: [nome-start] 49% [nome-end email-start] 49% [email-end];
+}
+.formContainer label{
+    color: #555;
+    font-weight: bold;
+}
+.formContainer input{
+    border: none;
+    border-radius: 0.625em;
+    padding: 0;
+}
+#nome{
+    grid-row: label;
+    grid-column: nome;
+}
+#nome:focus{
+    border: none;
+}
+#email{
+    grid-row: label;
+    grid-column: email;
+}
+.nome{
+    grid-row: input;
+    grid-column: nome;
+}
+.email{
+    grid-row: input;
+    grid-column: email;
+}
+#msg{
+    grid-row: label2;
+    grid-column: 1/-1;
+}
+.formContainer textarea{
+    border: none;
+    border-radius: 0.625em;
+    grid-row: textarea;
+    grid-column: 1/-1;
+    resize: none;
+}
+#submit{
+    border: none;
+    background-color: #03A696;
+    grid-row: input2;
+    grid-column: email;
+    padding: 0.5em;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 50em){
+    .header-content {
+        background-image: url(../Imagens/3027347.jpg);
+        background-size: cover;
+        background-position: right;
+    }
+    .header-content-title {
+        color: #8c2e73;
+        text-align: left;
+        margin-left: 2em;
+    }
+    .header-content p {
+        width: 40%;
+        color: #8c2e73;
+        margin-top: 2em;
+    }
+    .main-container{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 75em){
+    .bg{
+        height: 30em;
+        background-image: url(../imgs/black-and-white-short-coated-dogs-3628100.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+

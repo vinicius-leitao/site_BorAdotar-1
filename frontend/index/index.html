@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BorAdotar - Encontre seu bichinho</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Vinícius">
+    <meta name="description" content="Página principal do nosso case">
+    <meta name="keywords" content="adoção, animais, pet, gatos, cachorros, lar">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../index/Imagens/collar-verde.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../index/fontes/style.css">
+    <link rel="stylesheet" href="../../index/css/normalize.css">
+    <link rel="stylesheet" href="../../index/css/estilo.css">
+    <link rel="stylesheet" href="../../index/css/menu.css">
+    <link rel="stylesheet" href="../../index/css/footer.min.css">
+    <link rel="stylesheet" href="../../index/slick/slick.css">
+    <link rel="stylesheet" href="../../index/slick/slick-theme.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../../index/js/axios_index.js"></script>
+    <script type="text/javascript" src="../../index/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../index/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../../index/slick/slick.js"></script>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-bar">
+            <a href="#"><img src="../../index/Imagens/logoboradotarverde.png" alt="Logomarca do site"></a>
+            <label for="check"></span><span class="icon-menu3"></span></label>
+            <input type="checkbox" name="checkbox" id="check">
+            <nav class="header-menu clearfix">
+                <ul>
+                    <li class="home"><a href="/" class="links">Home</a></li>
+                    <li class="adotar"><a href="/catalogo" class="links">Adote</a></li>
+                    <li class="suporte"><a href="/suporte" class="links">Suporte</a></li>
+                    <li class="criar"><a id="cadastro" href="/cadastro" class="links"></a></li>
+                    <li class="entrar"><a id="login" href="/login" class="links"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <h1 class="header-content-title">Bora adotar um amigo?</h1>
+            <p class="clearfix">Quando você adota um animalzinho, você o protege dos perigos que existem na rua. São
+                mais de 4 milhões de animais de rua no Brasil! Nos ajude a reduzir esse número, adote um bichinho!</p>
+        </div>
+    </header>
+    <main class="main-container">
+        <section class="main-content clearfix-before clearfix">
+            <h2>Um pouco sobre nós...</h2>
+
+               <article class="main-content-article about">
+                    <h3>Quem nós somos?</h3>
+                    <img src="../../index/Imagens/idea.svg" alt="descrição">
+                    <p>Somos um grupo de jovens universitários, atualmente em processo trainee para o Ramo Estudantil
+                        IEEE/ CEFET-RJ.</p>
+                </article>
+                <article class="main-content-article objetivos">
+                    <h3>Objetivos:</h3>
+                    <img src="../../index/Imagens/friends.svg" alt="descrição">
+                    <p>Impulsionar o alcance de divulgação de animais de rua precisando de cuidados e de um lar, além de
+                        facilitar processo de adoção.</p>
+                </article>
+                <article class="main-content-article como">
+                    <h3>De que forma?</h3>
+                    <img src="../../index/Imagens/meeting.svg" alt="descrição">
+                    <p>Interagindo pessoas de forma fácil, prática e rápida através das ferramentas disponíveis em nosso
+                        site.</p>
+                </article>
+                <article class="main-content-article motivo">
+                    <h3>Para que?</h3>
+                    <img src="../../index/Imagens/pet.svg" alt="descrição">
+                    <p>Para salvar vidas. Nos ajude a reduzir o número de animais abandonados, adote um bichinho!</p>
+                </article>
+        </section>
+        <section class="preview clearfix-before clearfix">
+            <h2>Olha quem está esperando um lar:</h2>
+            <div id="slide" class="slide">
+            </div>
+        </section>
+        <section class="callSup clearfix-before">
+            <h2>Pintou alguma dúvida?</h2>
+            <p>Temos um lugar perfeito para você entender tudo, entra aí!</p>
+            <a href="/suporte">Visitar suporte</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="site">
+            <img src="../../index/Imagens/boradotar (1).png" alt="logomarca do site BorAdotar">
+            <p>O BorAdotar é uma fundação sem fundos lucrativos que procura auxiliar os animais a encontrar um lar! Faça uma adoção ou ajude um amigo!</p>
+        </div>
+        <div class="services">
+            <h3 class="services-title">Serviços</h3>
+            <ul class="ul">
+                <li><a href="#" class="links-footer">Home</a></li>
+                <li><a href="#" class="links-footer">Adote</a></li>
+                <li><a href="#" class="links-footer">Suporte</a></li>
+                <li><a href="#" class="links-footer">Entrar</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h3 class="social-title">Siga-nos nas redes sociais</h3>
+            <div class="social-medias">
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+        <div class="credits">
+            <a href="https://www.pexels.com/photo/blur-care-cat-close-up-569170/">Photo by Japheth Mast from Pexels</a>
+            <a href="https://www.pexels.com/photo/animal-animal-photography-animal-portrait-ball-422220/">Photo by Matthias Zomer from Pexels</a>
+            <a href="https://br.freepik.com/fotos-gratis/gatinhos-no-travesseiro_5554759.htm#page=2&query=gato&position=23">Filhotes foto criado por jcomp - br.freepik.com</a>
+        </div>
+    </footer>
+    <script src="../../index/js/descerConteudoHeader.js"></script>
+    <script src="../../index/js/carousel.js"></script>
+</body>
+</html>
